@@ -1,61 +1,43 @@
-@media (max-width: 768px) {
-  /* pour la taille de mobile */
-  body {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-*{
+* {
 	padding: 0;
 	margin: 0;
 	font-family: 'Inter', sans-serif;
 }
-body{
+body {
 	background-color: rgb(37, 37, 121);
+	overflow-x: hidden; /* éviter les scrolls horizontaux */
 }
-.header{
+.header {
 	display: flex;
 	justify-content: space-between;
 }
 .header h1 {
 	color: white;
 	font-size: 40px;
-	padding: 15px ;
+	padding: 15px;
 }
 .header span {
-	color: white;
 	font-size: 25px;
 	color: black;
 }
-.nav ul{
+.nav ul {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
 }
-.nav li{
+.nav li {
 	list-style: none;
 	padding: 15px;
 }
-.nav li a{
+.nav li a {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
 }
-.nav li a:hover{
+.nav li a:hover {
 	color: black;
 }
-.Follow{
+.Follow {
 	text-decoration: none;
 	background-color: white;
 	color: black;
@@ -63,51 +45,43 @@ body{
 	width: 85px;
 	height: 20px;
 	text-align: center;
-	padding: 15px ;
+	padding: 15px;
 	margin: 10px;
 }
-.Follow:hover{
+.Follow:hover {
 	background-color: black;
 	color: white;
 }
-.main{
+.main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 60px;
 }
-.presentation{
+.presentation {
 	padding: 30px;
 }
-.name{
+.name, .metié {
 	font-size: 26px;
 	color: white;
 }
-.presentation h1{
+.presentation h1 {
 	font-size: 50px;
 	color: white;
 }
-.lahlou {
+.lahlou, .dev {
 	font-size: 50px;
 	color: black;
 }
-.metié{
-	font-size: 26px;
-	color: white;
-}
-.dev{
-	font-size: 36px;
-	color: black;
-}
-.icone i{
+.icone i {
 	color: white;
 	font-size: 20px;
 	padding: 5px;
 }
-.icone i:hover{
+.icone i:hover {
 	color: black;
 }
-.profil img{
+.profil img {
 	width: 300px;
 	height: auto;
 	border-radius: 35px;
@@ -115,300 +89,303 @@ body{
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Download {
-    display: inline-block;
-    background-color: black; 
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-align: center;
-    transition: background 0.3s ease, transform 0.2s ease;
+	display: inline-block;
+	background-color: black;
+	padding: 12px 20px;
+	border-radius: 30px;
+	text-align: center;
+	transition: background 0.3s ease, transform 0.2s ease;
 }
 .Download a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
 }
-.Download a:hover{
-	background-color: white; 
+.Download a:hover {
+	background-color: white;
 	color: black;
 }
 .Download:hover {
-    background-color: white; 
-    transform: scale(1.05);
+	background-color: white;
+	transform: scale(1.05);
 }
 .Download:active {
-    transform: scale(0.95);
+	transform: scale(0.95);
 }
-.container{
-	/* width: 600px; */
+.container {
 	padding: 20px;
 	margin: 10px;
 }
-.container h1{
+.container h1 {
 	color: white;
 	text-align: center;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 3px solid #00AEEF; 
-    padding-bottom: 10px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 3px solid #00AEEF;
+	padding-bottom: 10px;
 }
-.presentation h3{
+.presentation h3 {
 	font-size: 1.8em;
-    color: #00AEEF;
+	color: #00AEEF;
 }
-.presentation h3::first-letter{
-	color: black; 
-    font-size: 2em;
+.presentation h3::first-letter {
+	color: black;
+	font-size: 2em;
 }
-.presentation p{
+.presentation p {
 	font-size: 1.2em;
-    line-height: 1.6;
+	line-height: 1.6;
 	color: white;
 }
-#flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+#flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 #flex-par1, #flex_par2 {
-    width: 48%; 
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
-.list{
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
 }
 .list li {
-    font-size: 1.1em;
-    padding: 10px 0;
-    padding-left: 30px; 
-    position: relative;
-    color: white; 
+	font-size: 1.1em;
+	padding: 10px 0 10px 30px;
+	position: relative;
+	color: white;
 }
 .list li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #00AEEF; 
-    font-weight: bold;
-    font-size: 1.2em;
+	content: "✔";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #00AEEF;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 .list li:hover {
-    color: #FFD700;
-    cursor: pointer;
-}
-.list1 {
-    padding: 40px;
-}
-.list1 h2 {
-    color: #00AEEF;
-}
-.fletter {
-    display: inline-block;
-}
-.fletter::first-letter {
-    color: black;
-    font-size: 1.8em;
-}
-.list2{
-	padding: 40px;
-}
-.list2 h2 {
-    color: #00AEEF;
-}
-.fletter {
-    display: inline-block;
-}
-.fletter::first-letter {
-    color: black;
-    font-size: 1.8em;
-}
-.list3{
-	padding: 40px;
-}
-.list3 h2 {
-    color: #00AEEF;
-}
-.fletter {
-    display: inline-block;
-}
-.fletter::first-letter {
-    color: black;
-    font-size: 1.8em;
-}
-.list4{
-	padding: 40px;
-    padding-top: 25px;
-}
-.list4 h2 {
-    color: #00AEEF;
-}
-.fletter {
-    display: inline-block;
-}
-.fletter::first-letter {
-    color: black;
-    font-size: 1.8em;
+	color: #FFD700;
+	cursor: pointer;
 }
 .list1, .list2, .list3, .list4 {
-    margin-bottom: 0; 
-    padding-bottom: 0; 
+	padding: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
-.parag{
-	margin: 20px auto;  
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: white;
-    text-align: center; 
-    max-width: 80%; 
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1); 
-    border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-	border-right: 50px;
+.list4 {
+	padding-top: 25px;
+}
+.fletter {
+	display: inline-block;
+}
+.fletter::first-letter {
+	color: black;
+	font-size: 1.8em;
+}
+.list1 h2, .list2 h2, .list3 h2, .list4 h2 {
+	color: #00AEEF;
+}
+.parag {
+	margin: 20px auto;
+	font-size: 1.2em;
+	line-height: 1.8;
+	color: white;
+	text-align: center;
+	max-width: 80%;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .container1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
 }
 .card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	padding: 20px;
+	width: 250px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .card h2 {
-    color: #00AEEF;
-    font-size: 1.3em;
+	color: #00AEEF;
+	font-size: 1.3em;
 }
 .card p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #ddd;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #ddd;
 }
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 .contact-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 30px; 
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	padding: 25px;
+	margin-top: 30px;
+	width: 400px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .input-group {
-    margin-bottom: 15px;
-    text-align: left;
+	margin-bottom: 15px;
+	text-align: left;
 }
 .input-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #00AEEF;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #00AEEF;
 }
-.input-group input, 
+.input-group input,
 .input-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 1em;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	font-size: 1em;
 }
-.input-group input::placeholder, 
+.input-group input::placeholder,
 .input-group textarea::placeholder {
-    color: #ddd;
+	color: #ddd;
 }
 button {
-    background: #00AEEF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: 0.3s;
+	background: #00AEEF;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	font-size: 1em;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	transition: 0.3s;
 }
 button:hover {
-    background: #FFD700;
-    color: black;
+	background: #FFD700;
+	color: black;
 }
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
 }
 .about-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 25px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	padding: 25px;
+	width: 350px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #00AEEF;
-    margin-bottom: 10px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #00AEEF;
+	margin-bottom: 10px;
 }
 .about-card h2 {
-    color: #00AEEF;
-    font-size: 1.5em;
+	color: #00AEEF;
+	font-size: 1.5em;
 }
 .about-card p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #ddd;
+	font-size: 1em;
+	margin-bottom: 10px;
+	color: #ddd;
 }
 .btn {
-    display: inline-block;
-    background: #00AEEF;
-    color: white;
-    padding: 10px 15px;
-    font-size: 1em;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s ease;
+	display: inline-block;
+	background: #00AEEF;
+	color: white;
+	padding: 10px 15px;
+	font-size: 1em;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: 0.3s ease;
 }
 .btn:hover {
-    background: #FFD700;
-    color: black;
+	background: #FFD700;
+	color: black;
+}
+@media (max-width: 768px) {
+	body {
+		padding: 10px;
+		font-size: 14px;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav ul {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 0;
+		gap: 10px;
+	}
+	.nav li {
+		padding: 5px 0;
+	}
+	.main {
+		flex-direction: column;
+		padding: 30px 10px;
+		gap: 30px;
+		text-align: center;
+	}
+	.profil img {
+		width: 70%;
+		max-width: 250px;
+	}
+	#flex {
+		flex-direction: column;
+		gap: 40px;
+	}
+	#flex-par1,
+	#flex_par2 {
+		width: 100%;
+	}
+	.container1 {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.contact-card,
+	.about-card {
+		width: 90%;
+	}
 }
